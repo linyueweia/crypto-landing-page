@@ -3,285 +3,655 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Wall Street Elite — Former Wall Street Analysts Trading Community</title>
+<title>Wall Street Elite — Institutional-Grade Trading Community</title>
+<meta name="description" content="Join the elite trading community led by former Wall Street analysts. 92% signal accuracy, 15,000+ members across Europe. Free access.">
 <style>
-:root{--gold:#ffd700;--gl:rgba(255,215,0,0.12);--gb:rgba(255,215,0,0.25);--dark:#07071a;--card:rgba(255,255,255,0.04);--brd:rgba(255,255,255,0.08);--muted:#9090aa;--dim:#555570;--green:#25d366;--gd:#06b53c;--red:#ff6b6b}
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--dark);color:#fff;line-height:1.6}
-.c{max-width:900px;margin:0 auto;padding:0 24px}
-.sec{padding:80px 0}
-.sec-alt{background:rgba(255,255,255,0.02);border-top:1px solid var(--brd);border-bottom:1px solid var(--brd)}
-.bdg{display:inline-block;background:var(--gl);border:1px solid var(--gb);color:var(--gold);padding:6px 20px;border-radius:50px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;margin-bottom:20px}
-h2{font-size:28px;font-weight:800;margin-bottom:8px}
-.sub{font-size:15px;color:var(--muted);margin-bottom:40px}
-nav{position:sticky;top:0;z-index:100;background:rgba(7,7,26,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--brd);padding:14px 0}
-.ni{display:flex;align-items:center;justify-content:space-between}
-.logo{font-size:18px;font-weight:800;color:var(--gold);text-decoration:none}
-.nb{background:linear-gradient(135deg,var(--green),var(--gd));color:#fff;padding:10px 28px;border-radius:50px;font-size:13px;font-weight:700;text-decoration:none;box-shadow:0 4px 20px rgba(37,211,102,0.3);transition:all .3s}
-.hero{text-align:center;padding:90px 24px 70px;background:radial-gradient(ellipse at top,rgba(255,215,0,0.06) 0%,transparent 60%)}
-.hero h1{font-size:52px;font-weight:900;background:linear-gradient(135deg,#ffd700 0%,#ffaa00 50%,#ff8c00 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;line-height:1.05;margin-bottom:14px;letter-spacing:-1px}
-.hs{font-size:22px;color:var(--muted);margin-bottom:6px;font-weight:500}
-.ht{font-size:15px;color:var(--dim);margin-bottom:24px}
-.urg{display:inline-block;background:rgba(255,80,80,0.1);border:1px solid rgba(255,80,80,0.3);color:var(--red);padding:7px 22px;border-radius:50px;font-size:12px;font-weight:700;margin-bottom:32px}
-.sts{display:flex;justify-content:center;background:var(--card);border:1px solid var(--brd);border-radius:20px;overflow:hidden;width:fit-content;margin:0 auto 35px}
-.st{padding:22px 32px;text-align:center;border-right:1px solid var(--brd)}
-.st:last-child{border-right:none}
-.sn{font-size:28px;font-weight:900;color:var(--gold);display:block;line-height:1}
-.sl{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-top:5px;display:block}
-.cg{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.bp{background:linear-gradient(135deg,var(--green),var(--gd));color:#fff;padding:16px 44px;border-radius:50px;font-size:16px;font-weight:800;text-decoration:none;box-shadow:0 8px 30px rgba(37,211,102,0.35);transition:all .3s}
-.bp:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(37,211,102,0.5)}
-.bs{background:var(--card);border:1px solid var(--brd);color:var(--muted);padding:16px 28px;border-radius:50px;font-size:14px;font-weight:600;text-decoration:none;transition:all .3s}
-.bs:hover{border-color:var(--gb);color:var(--gold)}
-.note{font-size:12px;color:var(--dim);margin-top:14px}
-.md{display:flex;justify-content:center;align-items:center;gap:34px;flex-wrap:wrap;padding:26px 0}
-.mi{background:var(--card);border:1px solid var(--brd);border-radius:8px;padding:7px 16px;font-size:12px;font-weight:700;color:var(--dim)}
-.aw{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:16px}
-.awrd{background:var(--gl);border:1px solid var(--gb);border-radius:12px;padding:9px 18px;text-align:center}
-.awrdi{font-size:17px}
-.awrdn{font-size:10px;font-weight:700;color:var(--gold);margin-top:2px}
-.stps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.sp{background:var(--card);border:1px solid var(--brd);border-radius:20px;padding:28px 18px;text-align:center;transition:border-color .3s}
-.sp:hover{border-color:var(--gb)}
-.spn{width:40px;height:40px;background:var(--gl);border:1px solid var(--gb);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:var(--gold);margin:0 auto 14px}
-.spi{font-size:32px;margin-bottom:11px}
-.sp h3{font-size:14px;font-weight:700;margin-bottom:7px}
-.sp p{font-size:12px;color:var(--muted);line-height:1.6}
-.tg{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
-.cd{background:var(--card);border:1px solid var(--brd);border-radius:20px;padding:24px;display:flex;gap:16px;cursor:pointer;transition:all .3s;position:relative}
-.cd:hover{border-color:var(--gb);transform:translateY(-3px);box-shadow:0 14px 40px rgba(0,0,0,0.3)}
-.cd::after{content:"Read Full Bio 92";position:absolute;bottom:16px;right:20px;font-size:10px;font-weight:700;color:var(--gold);opacity:0;transition:opacity .3s}
-.cd:hover::after{opacity:1}
-.av{width:74px;height:74px;border-radius:50%;object-fit:cover;border:2px solid var(--gb);flex-shrink:0}
-.inf{flex:1}
-.nm{font-size:16px;font-weight:800;color:var(--gold);margin-bottom:2px}
-.rl{font-size:10px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:9px}
-.crds{display:flex;flex-direction:column;gap:4px}
-.crd{display:inline-flex;align-items:center;gap:4px;font-size:10px;color:var(--muted);background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);padding:3px 9px;border-radius:5px}
-.crd strong{color:var(--gold)}
-.qst{display:flex;gap:12px;margin-top:10px}
-.qs{text-align:center}
-.qsn{font-size:14px;font-weight:800;color:var(--gold);display:block}
-.qsl{font-size:9px;color:var(--dim);text-transform:uppercase}
-.mo{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.88);backdrop-filter:blur(12px);z-index:1000;align-items:center;justify-content:center;padding:20px}
-.mo.on{display:flex}
-.m{background:#0c0c28;border:1px solid var(--gb);border-radius:24px;max-width:600px;width:100%;max-height:88vh;overflow-y:auto;position:relative;box-shadow:0 30px 80px rgba(0,0,0,0.65)}
-.mh{display:flex;gap:16px;padding:26px;border-bottom:1px solid var(--brd)}
-.mav{width:84px;height:84px;border-radius:50%;object-fit:cover;border:3px solid var(--gb);flex-shrink:0}
-.mnm{font-size:21px;font-weight:900;color:var(--gold);margin-bottom:3px}
-.mrl{font-size:11px;color:var(--muted);font-weight:600;margin-bottom:11px}
-.mcrds{display:flex;flex-wrap:wrap;gap:6px}
-.mcrd{background:var(--gl);border:1px solid var(--gb);border-radius:7px;padding:4px 11px;font-size:10px;color:var(--muted)}
-.mcrd strong{color:var(--gold)}
-.mb{padding:24px 26px}
-.msc{margin-bottom:20px}
-.msc h4{font-size:10px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:9px}
-.msc p{font-size:13px;color:var(--muted);line-height:1.8}
-.mtl{border-left:2px solid var(--gb);padding-left:16px;margin-left:4px}
-.ti{margin-bottom:15px;position:relative}
-.ti::before{content:'';width:7px;height:7px;background:var(--gold);border-radius:50%;position:absolute;left:-21px;top:4px}
-.tt{font-size:13px;font-weight:700;color:#fff;margin-bottom:2px}
-.ts{font-size:11px;color:var(--gold);font-weight:600}
-.td{font-size:11px;color:var(--dim);margin-top:2px}
-.msts{display:flex;gap:16px;margin-top:18px;padding-top:18px;border-top:1px solid var(--brd)}
-.mss{text-align:center;flex:1}
-.mssn{font-size:20px;font-weight:900;color:var(--gold);display:block}
-.mssl{font-size:10px;color:var(--dim);text-transform:uppercase}
-.mcl{position:absolute;top:16px;right:18px;background:rgba(255,255,255,0.08);border:1px solid var(--brd);color:var(--muted);width:32px;height:32px;border-radius:50%;font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s}
-.mcl:hover{background:rgba(255,255,255,0.15);color:#fff}
-.sg{grid-template-columns:repeat(3,1fr);display:grid;gap:14px}
-.svc{background:var(--card);border:1px solid var(--brd);border-radius:16px;padding:24px 16px;text-align:center;transition:all .3s}
-.svc:hover{border-color:var(--gb);transform:translateY(-2px)}
-.svi{font-size:34px;margin-bottom:11px}
-.svc h3{font-size:13px;font-weight:700;margin-bottom:6px}
-.svc p{font-size:11px;color:var(--muted);line-height:1.6}
-.ct{background:linear-gradient(135deg,rgba(247,147,26,0.1),rgba(255,149,0,0.05));border:1px solid rgba(247,147,26,0.25);border-radius:28px;padding:52px 40px;text-align:center}
-.ct h2{font-size:30px;font-weight:900;margin-bottom:9px}
-.ct p{font-size:15px;color:var(--muted);margin-bottom:26px}
-.tg2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-.tsi{background:var(--card);border:1px solid var(--brd);border-radius:15px;padding:20px;border-left:3px solid var(--gb)}
-.tsis{color:var(--gold);font-size:11px;letter-spacing:2px;margin-bottom:8px}
-.tsit{font-size:12px;color:var(--muted);line-height:1.75;font-style:italic;margin-bottom:10px}
-.tsia{font-size:12px;font-weight:700;color:var(--gold)}
-.tsil{color:var(--dim);font-weight:400;font-size:11px;margin-left:4px}
-.fl{max-width:700px;margin:0 auto}
-.fi{border-bottom:1px solid var(--brd)}
-.fq{display:flex;justify-content:space-between;align-items:center;padding:17px 0;font-size:14px;font-weight:700;cursor:pointer;color:#fff;gap:14px}
-.fq:hover{color:var(--gold)}
-.fp{font-size:18px;color:var(--gold);transition:transform .3s;flex-shrink:0}
-.fi.on .fp{transform:rotate(45deg)}
-.fa{max-height:0;overflow:hidden;transition:max-height .3s}
-.fi.on .fa{max-height:300px}
-.fai{padding-bottom:16px;font-size:13px;color:var(--muted);line-height:1.75}
-.ft{border-top:1px solid var(--brd);padding:26px 0;text-align:center}
-.ft p{font-size:10px;color:var(--dim);max-width:700px;margin:0 auto;line-height:1.8}
-@media(max-width:700px){.hero h1{font-size:32px}.sts{flex-direction:column;width:100%}.st{border-right:none;border-bottom:1px solid var(--brd)}.st:last-child{border-bottom:none}.stps,.tg,.sg,.tg2{grid-template-columns:1fr}.cd{flex-direction:column;align-items:center;text-align:center}.crds{align-items:center}.ct{padding:34px 18px}.sec{padding:60px 0}}
+:root{--primary:#ffd700;--primary-dim:rgba(255,215,0,0.12);--primary-border:rgba(255,215,0,0.3);--bg:#030310;--bg-2:#0a0a1f;--bg-3:#12122a;--surface:rgba(255,255,255,0.04);--border:rgba(255,255,255,0.08);--text:#f0f0fa;--muted:#8888aa;--dim:#44445a;--green:#00c853;--green-d:#00a844}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.container{width:100%;max-width:1100px;margin:0 auto;padding:0 32px}
+.flex{display:flex}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.grid-2{display:grid;grid-template-columns:repeat(2,1fr)}.grid-3{display:grid;grid-template-columns:repeat(3,1fr)}.grid-4{display:grid;grid-template-columns:repeat(4,1fr)}
+.text-center{text-align:center}.text-gradient{background:linear-gradient(135deg,#ffd700,#ffaa00);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+
+/* HEADER */
+header{position:fixed;top:0;left:0;right:0;z-index:999;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);background:rgba(3,3,16,0.85);border-bottom:1px solid var(--border);transition:all .3s}
+.header-inner{padding:14px 0;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:800;color:var(--primary)}
+.logo-icon{width:32px;height:32px;background:linear-gradient(135deg,var(--primary),#ff8800);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px}
+.header-cta{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,var(--green),var(--green-d));color:#fff;padding:10px 24px;border-radius:50px;font-size:13px;font-weight:700;box-shadow:0 4px 20px rgba(0,200,83,0.3);transition:all .3s}
+.header-cta:hover{transform:translateY(-1px);box-shadow:0 6px 28px rgba(0,200,83,0.4)}
+
+/* HERO */
+.hero{position:relative;padding:160px 0 100px;text-align:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(255,215,0,0.07) 0%,transparent 60%),radial-gradient(ellipse 50% 40% at 80% 50%,rgba(0,200,83,0.04) 0%,transparent 50%)}
+.hero-particles{position:absolute;inset:0;overflow:hidden;pointer-events:none}
+.hero-particles::before{content:'';position:absolute;top:20%;left:10%;width:300px;height:300px;background:radial-gradient(circle,rgba(255,215,0,0.03),transparent 70%);border-radius:50%}
+.hero-particles::after{content:'';position:absolute;bottom:10%;right:15%;width:400px;height:400px;background:radial-gradient(circle,rgba(0,200,83,0.03),transparent 70%);border-radius:50%}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--primary-dim);border:1px solid var(--primary-border);color:var(--primary);padding:8px 20px;border-radius:50px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:28px}
+.hero-badge::before{content:'';width:6px;height:6px;background:var(--primary);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+.hero h1{font-size:clamp(40px,6vw,68px);font-weight:900;line-height:1.05;margin-bottom:20px;letter-spacing:-1px}
+.hero-sub{font-size:20px;color:var(--muted);max-width:600px;margin:0 auto 12px;font-weight:500}
+.hero-loc{font-size:14px;color:var(--dim);margin-bottom:32px}
+.hero-cta{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--green),var(--green-d));color:#fff;padding:18px 48px;border-radius:60px;font-size:17px;font-weight:800;box-shadow:0 8px 40px rgba(0,200,83,0.35);transition:all .3s;margin:8px}
+.hero-cta:hover{transform:translateY(-3px);box-shadow:0 16px 50px rgba(0,200,83,0.5)}
+.hero-cta-outline{display:inline-flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--border);color:var(--muted);padding:18px 36px;border-radius:60px;font-size:15px;font-weight:600;transition:all .3s;margin:8px}
+.hero-cta-outline:hover{border-color:var(--primary-border);color:var(--primary)}
+.hero-note{font-size:12px;color:var(--dim);margin-top:20px}
+.hero-stats{display:flex;justify-content:center;gap:0;margin-top:60px;background:var(--surface);border:1px solid var(--border);border-radius:20px;overflow:hidden;max-width:700px;margin-left:auto;margin-right:auto}
+.hero-stat{padding:28px 36px;text-align:center;flex:1;border-right:1px solid var(--border);position:relative}
+.hero-stat:last-child{border-right:none}
+.hero-stat::before{content:'';position:absolute;top:50%;left:0;transform:translateY(-50%);width:1px;height:40%;background:var(--border)}
+.hero-stat-num{font-size:32px;font-weight:900;color:var(--primary);display:block;line-height:1}
+.hero-stat-label{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:1.5px;margin-top:6px;display:block}
+
+/* DIVIDER */
+.divider{height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent)}
+
+/* SECTIONS */
+.section{padding:100px 0}
+.section-alt{background:var(--bg-2)}
+
+/* BADGE */
+.section-badge{display:inline-flex;align-items:center;gap:6px;background:var(--primary-dim);border:1px solid var(--primary-border);color:var(--primary);padding:6px 16px;border-radius:50px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:16px}
+.section-title{font-size:clamp(26px,3.5vw,38px);font-weight:800;margin-bottom:12px}
+.section-sub{font-size:16px;color:var(--muted);max-width:600px;margin:0 auto}
+
+/* MEDIA STRIP */
+.media-strip{padding:40px 0;border-bottom:1px solid var(--border)}
+.media-inner{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap}
+.media-item{font-size:13px;font-weight:700;color:var(--dim);letter-spacing:1px;text-transform:uppercase;opacity:0.6;transition:opacity .3s}
+.media-item:hover{opacity:1}
+.awards{display:flex;justify-content:center;gap:16px;margin-top:28px;flex-wrap:wrap}
+.award-chip{background:var(--primary-dim);border:1px solid var(--primary-border);border-radius:14px;padding:12px 24px;display:flex;align-items:center;gap:10px}
+.award-icon{font-size:20px}
+.award-text{text-align:left}
+.award-name{font-size:11px;font-weight:700;color:var(--primary)}
+.award-sub{font-size:9px;color:var(--muted)}
+
+/* HOW IT WORKS */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.step-card{background:var(--surface);border:1px solid var(--border);border-radius:24px;padding:36px 28px;text-align:center;position:relative;transition:all .4s}
+.step-card:hover{border-color:var(--primary-border);transform:translateY(-6px);box-shadow:0 20px 60px rgba(0,0,0,0.4)}
+.step-num{position:absolute;top:-16px;left:50%;transform:translateX(-50%);width:44px;height:44px;background:linear-gradient(135deg,var(--primary),#ff8800);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:900;color:#000}
+.step-icon{font-size:48px;margin:20px 0 16px}
+.step-card h3{font-size:17px;font-weight:700;margin-bottom:10px}
+.step-card p{font-size:13px;color:var(--muted);line-height:1.7}
+
+/* TEAM */
+.team-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.team-card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:28px;display:flex;gap:20px;cursor:pointer;transition:all .4s;position:relative;overflow:hidden}
+.team-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--primary),transparent);opacity:0;transition:opacity .3s}
+.team-card:hover{border-color:var(--primary-border);transform:translateY(-4px);box-shadow:0 16px 50px rgba(0,0,0,0.4)}
+.team-card:hover::before{opacity:1}
+.team-avatar{width:80px;height:80px;border-radius:50%;object-fit:cover;border:2px solid var(--primary-border);flex-shrink:0}
+.team-info{flex:1}
+.team-name{font-size:18px;font-weight:800;color:var(--primary);margin-bottom:2px}
+.team-role{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:0.8px;font-weight:600;margin-bottom:12px}
+.team-creds{display:flex;flex-direction:column;gap:5px}
+.team-cred{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--muted)}
+.team-cred-icon{color:var(--primary);width:14px;text-align:center}
+.team-stats{display:flex;gap:14px;margin-top:14px;padding-top:14px;border-top:1px solid var(--border)}
+.team-stat{text-align:center}
+.team-stat-num{font-size:15px;font-weight:800;color:var(--primary)}
+.team-stat-label{font-size:8px;color:var(--dim);text-transform:uppercase}
+.team-card-cta{position:absolute;bottom:20px;right:24px;font-size:10px;font-weight:700;color:var(--primary);opacity:0;transition:opacity .3s}
+.team-card:hover .team-card-cta{opacity:1}
+
+/* SERVICES */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.service-card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:32px 24px;text-align:center;transition:all .4s}
+.service-card:hover{border-color:var(--primary-border);transform:translateY(-4px)}
+.service-icon{font-size:42px;margin-bottom:16px}
+.service-card h3{font-size:15px;font-weight:700;margin-bottom:8px}
+.service-card p{font-size:12px;color:var(--muted);line-height:1.7}
+
+/* CTA */
+.cta-section{padding:80px 0}
+.cta-box{background:linear-gradient(135deg,rgba(255,215,0,0.06),rgba(255,170,0,0.03));border:1px solid var(--primary-border);border-radius:32px;padding:64px 48px;text-align:center;position:relative;overflow:hidden}
+.cta-box::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(ellipse at center,rgba(255,215,0,0.04),transparent 50%);pointer-events:none}
+.cta-title{font-size:clamp(28px,4vw,42px);font-weight:900;margin-bottom:12px}
+.cta-sub{font-size:17px;color:var(--muted);margin-bottom:32px}
+.cta-btn{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,var(--green),var(--green-d));color:#fff;padding:20px 56px;border-radius:60px;font-size:18px;font-weight:800;box-shadow:0 10px 50px rgba(0,200,83,0.4);transition:all .3s}
+.cta-btn:hover{transform:translateY(-3px);box-shadow:0 18px 60px rgba(0,200,83,0.55)}
+.cta-note{font-size:12px;color:var(--dim);margin-top:16px}
+
+/* TESTIMONIALS */
+.testi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.testi-card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:28px;border-left:3px solid var(--primary);position:relative}
+.testi-stars{color:var(--primary);font-size:12px;letter-spacing:3px;margin-bottom:14px}
+.testi-text{font-size:14px;color:var(--muted);line-height:1.8;font-style:italic;margin-bottom:18px}
+.testi-author{display:flex;align-items:center;gap:10px}
+.testi-avatar{width:36px;height:36px;background:linear-gradient(135deg,var(--primary),#ff8800);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#000}
+.testi-name{font-size:13px;font-weight:700;color:var(--primary)}
+.testi-loc{font-size:11px;color:var(--dim)}
+
+/* FAQ */
+.faq{max-width:720px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-size:15px;font-weight:700;color:var(--text);gap:20px;background:none;border:none;cursor:pointer;text-align:left}
+.faq-q:hover{color:var(--primary)}
+.faq-icon{font-size:20px;color:var(--primary);transition:transform .3s;flex-shrink:0}
+.faq-item.open .faq-icon{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-item.open .faq-a{max-height:400px}
+.faq-a-inner{padding:0 0 24px;font-size:14px;color:var(--muted);line-height:1.9}
+
+/* FOOTER */
+footer{padding:60px 0 40px;border-top:1px solid var(--border)}
+.footer-disclaimer{font-size:11px;color:var(--dim);line-height:2;max-width:800px;margin:0 auto;text-align:center}
+.footer-disclaimer strong{color:var(--muted)}
+
+/* MODAL */
+.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.9);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);z-index:9999;align-items:center;justify-content:center;padding:24px}
+.modal-overlay.on{display:flex}
+.modal{background:var(--bg-3);border:1px solid var(--primary-border);border-radius:28px;max-width:640px;width:100%;max-height:90vh;overflow-y:auto;position:relative;box-shadow:0 40px 100px rgba(0,0,0,0.7)}
+.modal-header{padding:36px;border-bottom:1px solid var(--border);display:flex;gap:20px;align-items:flex-start}
+.modal-avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;border:3px solid var(--primary-border);flex-shrink:0}
+.modal-name{font-size:24px;font-weight:900;color:var(--primary);margin-bottom:4px}
+.modal-role{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.8px;font-weight:600;margin-bottom:16px}
+.modal-creds{display:flex;flex-wrap:wrap;gap:8px}
+.modal-cred{background:var(--primary-dim);border:1px solid var(--primary-border);border-radius:8px;padding:5px 12px;font-size:11px;color:var(--muted)}
+.modal-cred strong{color:var(--primary)}
+.modal-close{position:absolute;top:20px;right:20px;width:36px;height:36px;border-radius:50%;background:var(--surface);border:1px solid var(--border);color:var(--muted);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s}
+.modal-close:hover{background:var(--primary-dim);color:var(--primary)}
+.modal-body{padding:32px}
+.modal-section{margin-bottom:28px}
+.modal-section h4{font-size:10px;font-weight:700;color:var(--primary);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:12px}
+.modal-section p{font-size:14px;color:var(--muted);line-height:1.9}
+.modal-timeline{border-left:2px solid var(--primary-border);padding-left:20px;margin-left:4px}
+.tl-item{margin-bottom:20px;position:relative}
+.tl-item::before{content:'';position:absolute;left:-25px;top:6px;width:8px;height:8px;border-radius:50%;background:var(--primary)}
+.tl-title{font-size:14px;font-weight:700;margin-bottom:2px}
+.tl-sub{font-size:12px;color:var(--primary);font-weight:600}
+.tl-desc{font-size:12px;color:var(--dim);margin-top:2px}
+.modal-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:8px;padding-top:24px;border-top:1px solid var(--border)}
+.ms{text-align:center;background:var(--primary-dim);border:1px solid var(--primary-border);border-radius:12px;padding:16px 8px}
+.ms-n{font-size:20px;font-weight:900;color:var(--primary);display:block}
+.ms-l{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:0.5px}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.container{padding:0 20px}
+.hero{padding:120px 0 60px}
+.hero-stats{flex-direction:column}
+.hero-stat{border-right:none;border-bottom:1px solid var(--border)}
+.hero-stat:last-child{border-bottom:none}
+.hero-stat::before{display:none}
+.steps,.team-grid,.services-grid,.testi-grid{grid-template-columns:1fr}
+.cta-box{padding:40px 24px}
+.team-card{flex-direction:column;align-items:center;text-align:center}
+.team-creds{align-items:center}
+.team-stats{justify-content:center}
+.hero-stat-num{font-size:26px}
+}
 </style>
 </head>
 <body>
-<nav><div class="c ni"><a href="#" class="logo">Wall Street Elite</a><a href="https://chat.whatsapp.com/Eax4szSfbWxJ59BABFR4UO?mode=gi_t" class="nb" target="_blank" rel="noopener">Join Free</a></div></nav>
+<header>
+<div class="container header-inner">
+<a href="#" class="logo"><div class="logo-icon">&#9633;</div>Wall Street Elite</a>
+<a href="https://chat.whatsapp.com/Eax4szSfbWxJ59BABFR4UO?mode=gi_t" class="header-cta" target="_blank" rel="noopener">
+<span>Join Free</span>
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+</a>
+</div>
+</header>
+
 <section class="hero">
-<div class="bdg">Verified European Trading Community</div>
-<h1>Wall Street Elite</h1>
-<p class="hs">Led by Former Wall Street Analysts</p>
-<p class="ht">Join 15,000+ successful traders across Europe</p>
-<div class="urg">Limited Spots Available — Free Access</div>
-<div class="sts">
-<div class="st"><span class="sn">15K+</span><span class="sl">Active Members</span></div>
-<div class="st"><span class="sn">92%</span><span class="sl">Signal Accuracy</span></div>
-<div class="st"><span class="sn">500+</span><span class="sl">Daily Signals</span></div>
-<div class="st"><span class="sn">24/7</span><span class="sl">Expert Support</span></div>
+<div class="hero-bg"></div>
+<div class="hero-particles"></div>
+<div class="container">
+<div class="hero-badge">&#9633; Verified European Trading Community</div>
+<h1 class="text-gradient">Wall Street Elite</h1>
+<p class="hero-sub">Led by Former Wall Street Analysts</p>
+<p class="hero-loc">15,000+ Members Across Europe &middot; Since 2018</p>
+<div style="margin-top:12px;margin-bottom:32px">
+<a href="https://chat.whatsapp.com/Eax4szSfbWxJ59BABFR4UO?mode=gi_t" class="hero-cta" target="_blank" rel="noopener">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 6.975L.789 21.789l4.19-1.623A11.96 11.96 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+Join Free Now &mdash; WhatsApp Community
+</a>
+<a href="#how" class="hero-cta-outline">See How It Works</a>
 </div>
-<div class="cg">
-<a href="https://chat.whatsapp.com/Eax4szSfbWxJ59BABFR4UO?mode=gi_t" class="bp" target="_blank" rel="noopener">Join Free Now</a>
-<a href="#how" class="bs">How It Works</a>
+<p class="hero-note">No credit card &middot; Instant access &middot; Cancel anytime</p>
+
+<div class="hero-stats">
+<div class="hero-stat">
+<span class="hero-stat-num">15,000+</span>
+<span class="hero-stat-label">Active Members</span>
 </div>
-<p class="note">No credit card required · Instant WhatsApp access · Cancel anytime</p>
-</section>
-<section class="sec sec-alt">
-<div class="c" style="text-align:center">
-<p style="font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:2px;margin-bottom:16px">As Featured In</p>
-<div class="md">
-<div class="mi">Bloomberg</div><div class="mi">Financial Times</div><div class="mi">Reuters</div><div class="mi">CNBC</div><div class="mi">MarketWatch</div>
+<div class="hero-stat">
+<span class="hero-stat-num">92%</span>
+<span class="hero-stat-label">Signal Accuracy</span>
 </div>
-<div class="aw">
-<div class="awrd"><div class="awrdi"></div><div class="awrdn">Best Trading Community 2025</div></div>
-<div class="awrd"><div class="awrdi"></div><div class="awrdn">4.9/5 · 3,200+ Reviews</div></div>
-<div class="awrd"><div class="awrdi"></div><div class="awrdn">Verified Platform</div></div>
+<div class="hero-stat">
+<span class="hero-stat-num">500+</span>
+<span class="hero-stat-label">Daily Signals</span>
 </div>
-</div>
-</section>
-<section class="sec" id="how">
-<div class="c">
-<div style="text-align:center"><div class="bdg">Simple Process</div><h2>Start Trading Smarter in 3 Steps</h2><p class="sub">Everything you need — delivered to your WhatsApp</p></div>
-<div class="stps">
-<div class="sp"><div class="spn">1</div><div class="spi"></div><h3>Join Free on WhatsApp</h3><p>Click the button, join our private community. No credit card, no commitment. Instant free access.</p></div>
-<div class="sp"><div class="spn">2</div><div class="spi"></div><h3>Receive Daily Signals</h3><p>Get 500+ professional signals daily with precise entry, stop-loss, and take-profit levels. All on WhatsApp.</p></div>
-<div class="sp"><div class="spn">3</div><div class="spi"></div><h3>Trade & Build Returns</h3><p>Follow the signals, learn from analysts, and build consistent returns. Cancel anytime if not satisfied.</p></div>
-</div>
-</div>
-</section>
-<section class="sec sec-alt" id="team">
-<div class="c">
-<div style="text-align:center"><div class="bdg">Our Team</div><h2>Meet Our Former Wall Street Analysts</h2><p class="sub">Click any card to read their full bio and career history</p></div>
-<div class="tg">
-<div class="cd" onclick="openModal('marcus')">
-<img src="img/founder1.jpg" alt="Marcus Weber" class="av">
-<div class="inf">
-<div class="nm">Marcus Weber</div><div class="rl">Founder & Lead Market Strategist</div>
-<div class="crds">
-<div class="crd"><strong>Goldman Sachs</strong> — VP, Equity Derivatives</div>
-<div class="crd"><strong>LSE</strong> — MSc, Financial Economics</div>
-<div class="crd"><strong>22 Years</strong> Institutional Experience</div>
-</div>
-<div class="qst"><div class="qs"><span class="qsn">92%</span><span class="qsl">Accuracy</span></div><div class="qs"><span class="qsn">00M+</span><span class="qsl">AUM</span></div><div class="qs"><span class="qsn">3x</span><span class="qsl">Winner</span></div></div>
-</div>
-</div>
-<div class="cd" onclick="openModal('catherine')">
-<img src="img/founder2.jpg" alt="Catherine Hughes" class="av">
-<div class="inf">
-<div class="nm">Catherine Hughes</div><div class="rl">Senior Technical Analyst</div>
-<div class="crds">
-<div class="crd"><strong>JPMorgan</strong> — Senior Technical Analyst</div>
-<div class="crd"><strong>Cambridge</strong> — BSc, Applied Mathematics</div>
-<div class="crd"><strong>CFA III</strong> Charterholder</div>
-</div>
-<div class="qst"><div class="qs"><span class="qsn">88%</span><span class="qsl">Accuracy</span></div><div class="qs"><span class="qsn">15 Years</span><span class="qsl">Charts</span></div><div class="qs"><span class="qsn">500+</span><span class="qsl">Daily</span></div></div>
-</div>
-</div>
-<div class="cd" onclick="openModal('james')">
-<img src="img/founder3.jpg" alt="James Harrington" class="av">
-<div class="inf">
-<div class="nm">James Harrington</div><div class="rl">Senior Futures & Commodities Strategist</div>
-<div class="crds">
-<div class="crd"><strong>Barclays Capital</strong> — Director, Futures</div>
-<div class="crd"><strong>Oxford</strong> — MSc, Mathematical Finance</div>
-<div class="crd"><strong>Reuters</strong> Analyst Award 2022</div>
-</div>
-<div class="qst"><div class="qs"><span class="qsn">90%</span><span class="qsl">Accuracy</span></div><div class="qs"><span class="qsn">18 Years</span><span class="qsl">Futures</span></div><div class="qs"><span class="qsn">200+</span><span class="qsl">Daily</span></div></div>
-</div>
-</div>
-<div class="cd" onclick="openModal('emma')">
-<img src="img/founder4.jpg" alt="Emma Lindqvist" class="av">
-<div class="inf">
-<div class="nm">Emma Lindqvist</div><div class="rl">Risk Management Director</div>
-<div class="crds">
-<div class="crd"><strong>Deutsche Bank</strong> — VP, Risk Management</div>
-<div class="crd"><strong>Stockholm School of Economics</strong></div>
-<div class="crd"><strong>FRM</strong> Charterholder</div>
-</div>
-<div class="qst"><div class="qs"><span class="qsn">15 Years</span><span class="qsl">Risk</span></div><div class="qs"><span class="qsn">3,000+</span><span class="qsl">Mentored</span></div><div class="qs"><span class="qsn">00M+</span><span class="qsl">Managed</span></div></div>
-</div>
+<div class="hero-stat">
+<span class="hero-stat-num">24/7</span>
+<span class="hero-stat-label">Expert Support</span>
 </div>
 </div>
 </div>
 </section>
-<section class="sec">
-<div class="c">
-<div style="text-align:center"><div class="bdg">What's Included</div><h2>Everything You Need to Trade Professionally</h2><p class="sub">Institutional-grade tools — delivered to your WhatsApp</p></div>
-<div class="sg">
-<div class="svc"><div class="svi"></div><h3>500+ Daily Signals</h3><p>Entry, exit, stop-loss and take-profit for crypto, futures, forex, and indices.</p></div>
-<div class="svc"><div class="svi"></div><h3>Live Masterclasses</h3><p>Weekly live sessions with former Wall Street analysts. Recordings included.</p></div>
-<div class="svc"><div class="svi"></div><h3>Real-Time Analysis</h3><p>Live market updates, macro insights, and price action throughout the session.</p></div>
-<div class="svc"><div class="svi"></div><h3>Risk Framework</h3><p>Institutional risk management: position sizing, drawdown protection, and portfolio allocation.</p></div>
-<div class="svc"><div class="svi"></div><h3>Direct Expert Access</h3><p>Message analysts directly on WhatsApp. No email. Answers in minutes.</p></div>
-<div class="svc"><div class="svi"></div><h3>Weekly Trade Reviews</h3><p>Personalized portfolio reviews, performance analysis, and strategy adjustments.</p></div>
+
+<div class="divider"></div>
+
+<section class="section-alt">
+<div class="container">
+<div class="media-strip">
+<div class="media-inner">
+<span class="media-item">Bloomberg</span>
+<span class="media-item">Financial Times</span>
+<span class="media-item">Reuters</span>
+<span class="media-item">CNBC</span>
+<span class="media-item">MarketWatch</span>
+</div>
+</div>
+<div class="awards">
+<div class="award-chip"><div class="award-icon">&#127942;</div><div class="award-text"><div class="award-name">Best Trading Community</div><div class="award-sub">European Finance Awards 2025</div></div></div>
+<div class="award-chip"><div class="award-icon">&#11088;</div><div class="award-text"><div class="award-name">4.9/5 Rating</div><div class="award-sub">3,200+ Verified Reviews</div></div></div>
+<div class="award-chip"><div class="award-icon">&#128274;</div><div class="award-text"><div class="award-name">Verified Platform</div><div class="award-sub">Community Standards Certified</div></div></div>
 </div>
 </div>
 </section>
-<section class="sec sec-alt">
-<div class="c">
-<div class="ct">
-<div class="bdg">Free Access</div>
-<h2>Join Wall Street Elite Today</h2>
-<p>15,000+ traders already inside. Start receiving professional signals — for free.</p>
-<a href="https://chat.whatsapp.com/Eax4szSfbWxJ59BABFR4UO?mode=gi_t" class="bp" target="_blank" rel="noopener">JOIN FREE NOW</a>
-<p class="note" style="margin-top:12px">No credit card required · Instant access · Cancel anytime</p>
+
+<section class="section" id="how">
+<div class="container text-center">
+<div class="section-badge">Simple Process</div>
+<h2 class="section-title">Start Trading Smarter in 3 Steps</h2>
+<p class="section-sub">Everything you need &mdash; delivered directly to your WhatsApp</p>
+
+<div class="steps">
+<div class="step-card">
+<div class="step-num">1</div>
+<div class="step-icon">&#128241;</div>
+<h3>Join Free on WhatsApp</h3>
+<p>Click the button below. You&apos;ll be taken directly to our private WhatsApp community. No forms, no credit card, no commitment required.</p>
+</div>
+<div class="step-card">
+<div class="step-num">2</div>
+<div class="step-icon">&#128200;</div>
+<h3>Receive Daily Signals</h3>
+<p>Get 500+ institutional-grade signals daily with precise entry, stop-loss, and take-profit levels for crypto, futures, forex, and indices.</p>
+</div>
+<div class="step-card">
+<div class="step-num">3</div>
+<div class="step-icon">&#128181;</div>
+<h3>Trade &amp; Build Returns</h3>
+<p>Follow the signals, learn from former Wall Street analysts, and build consistent returns. Cancel anytime if not satisfied.</p>
+</div>
 </div>
 </div>
 </section>
-<section class="sec">
-<div class="c">
-<div style="text-align:center"><div class="bdg">Member Reviews</div><h2>What Our Members Say</h2><p class="sub">Verified reviews from traders across Europe</p></div>
-<div class="tg2">
-<div class="tsi"><div class="tsis">5/5</div><p class="tsit">"Marcus Weber's Goldman Sachs background is immediately clear in every analysis. The precision of his entries is unlike anything I've seen in 8 years of trading. My portfolio is up 34% since joining."</p><div class="tsia">Thomas K.<span class="tsil"> — Frankfurt, Germany</span></div></div>
-<div class="tsi"><div class="tsis">5/5</div><p class="tsit">"Catherine's technical analysis is genuinely world-class. The risk management education alone saved me from several major drawdowns. Best investment I've made this year."</p><div class="tsia">Sofia R.<span class="tsil"> — Milan, Italy</span></div></div>
-<div class="tsi"><div class="tsis">5/5</div><p class="tsit">"The European focus is perfect for my timezone. James's commodities insights are incredibly accurate. I've tried many services — nothing compares to this level of expertise."</p><div class="tsia">Erik L.<span class="tsil"> — Stockholm, Sweden</span></div></div>
-<div class="tsi"><div class="tsis">5/5</div><p class="tsit">"After 3 months, I've stopped gambling and started trading professionally. Emma's risk management principles are gold. My worst month was -4%, down from -28% before joining."</p><div class="tsia">David M.<span class="tsil"> — London, UK</span></div></div>
+
+<section class="section section-alt" id="team">
+<div class="container">
+<div class="text-center">
+<div class="section-badge">Our Team</div>
+<h2 class="section-title">Meet Our Former Wall Street Analysts</h2>
+<p class="section-sub">Click any card to read their full professional bio and career history</p>
+</div>
+
+<div class="team-grid" style="margin-top:48px">
+
+<div class="team-card" onclick="openModal('marcus')">
+<img src="img/marcus.jpg" alt="Marcus Weber" class="team-avatar">
+<div class="team-info">
+<div class="team-name">Marcus Weber</div>
+<div class="team-role">Founder &amp; Lead Market Strategist</div>
+<div class="team-creds">
+<div class="team-cred"><span class="team-cred-icon">&#127970;</span><strong>Goldman Sachs</strong> &mdash; VP, Equity Derivatives</div>
+<div class="team-cred"><span class="team-cred-icon">&#127891;</span><strong>LSE</strong> &mdash; MSc, Financial Economics</div>
+<div class="team-cred"><span class="team-cred-icon">&#128200;</span><strong>22 Years</strong> Institutional Experience</div>
+</div>
+<div class="team-stats">
+<div class="team-stat"><span class="team-stat-num">92%</span><span class="team-stat-label">Accuracy</span></div>
+<div class="team-stat"><span class="team-stat-num">$500M+</span><span class="team-stat-label">AUM</span></div>
+<div class="team-stat"><span class="team-stat-num">3x</span><span class="team-stat-label">Winner</span></div>
+</div>
+</div>
+<div class="team-card-cta">Read Full Bio &rarr;</div>
+</div>
+
+<div class="team-card" onclick="openModal('catherine')">
+<img src="img/catherine.jpg" alt="Catherine Hughes" class="team-avatar">
+<div class="team-info">
+<div class="team-name">Catherine Hughes</div>
+<div class="team-role">Senior Technical Analyst</div>
+<div class="team-creds">
+<div class="team-cred"><span class="team-cred-icon">&#127970;</span><strong>JPMorgan</strong> &mdash; Senior Technical Analyst</div>
+<div class="team-cred"><span class="team-cred-icon">&#127891;</span><strong>Cambridge</strong> &mdash; BSc Applied Mathematics</div>
+<div class="team-cred"><span class="team-cred-icon">&#128200;</span><strong>CFA III</strong> Charterholder</div>
+</div>
+<div class="team-stats">
+<div class="team-stat"><span class="team-stat-num">88%</span><span class="team-stat-label">Accuracy</span></div>
+<div class="team-stat"><span class="team-stat-num">50K+</span><span class="team-stat-label">Subscribers</span></div>
+<div class="team-stat"><span class="team-stat-num">15yr</span><span class="team-stat-label">Charts</span></div>
+</div>
+</div>
+<div class="team-card-cta">Read Full Bio &rarr;</div>
+</div>
+
+<div class="team-card" onclick="openModal('james')">
+<img src="img/james.jpg" alt="James Harrington" class="team-avatar">
+<div class="team-info">
+<div class="team-name">James Harrington</div>
+<div class="team-role">Senior Futures &amp; Commodities Strategist</div>
+<div class="team-creds">
+<div class="team-cred"><span class="team-cred-icon">&#127970;</span><strong>Barclays Capital</strong> &mdash; Director, Futures</div>
+<div class="team-cred"><span class="team-cred-icon">&#127891;</span><strong>Oxford</strong> &mdash; MSc Mathematical Finance</div>
+<div class="team-cred"><span class="team-cred-icon">&#128176;</span><strong>Reuters</strong> Analyst Award 2022</div>
+</div>
+<div class="team-stats">
+<div class="team-stat"><span class="team-stat-num">90%</span><span class="team-stat-label">Accuracy</span></div>
+<div class="team-stat"><span class="team-stat-num">18yr</span><span class="team-stat-label">Futures</span></div>
+<div class="team-stat"><span class="team-stat-num">200+</span><span class="team-stat-label">Daily</span></div>
+</div>
+</div>
+<div class="team-card-cta">Read Full Bio &rarr;</div>
+</div>
+
+<div class="team-card" onclick="openModal('emma')">
+<img src="img/emma.jpg" alt="Emma Lindqvist" class="team-avatar">
+<div class="team-info">
+<div class="team-name">Emma Lindqvist</div>
+<div class="team-role">Risk Management Director</div>
+<div class="team-creds">
+<div class="team-cred"><span class="team-cred-icon">&#127970;</span><strong>Deutsche Bank</strong> &mdash; VP, Risk Management</div>
+<div class="team-cred"><span class="team-cred-icon">&#127891;</span><strong>Stockholm School of Economics</strong></div>
+<div class="team-cred"><span class="team-cred-icon">&#128200;</span><strong>FRM</strong> Charterholder</div>
+</div>
+<div class="team-stats">
+<div class="team-stat"><span class="team-stat-num">15yr</span><span class="team-stat-label">Risk</span></div>
+<div class="team-stat"><span class="team-stat-num">$200M+</span><span class="team-stat-label">Managed</span></div>
+<div class="team-stat"><span class="team-stat-num">3K+</span><span class="team-stat-label">Mentored</span></div>
+</div>
+</div>
+<div class="team-card-cta">Read Full Bio &rarr;</div>
+</div>
+
 </div>
 </div>
 </section>
-<section class="sec sec-alt">
-<div class="c">
-<div style="text-align:center"><div class="bdg">FAQ</div><h2>Questions & Answers</h2></div>
-<div class="fl">
-<div class="fi"><div class="fq" onclick="this.parentElement.classList.toggle('on')">Is this really free? What's the catch?<span class="fp">+</span></div><div class="fa"><div class="fai">Yes, completely free to join. We offer premium paid memberships for traders who want deeper access and 1-on-1 mentorship, but all core signals and community features are free. No credit card required.</div></div></div>
-<div class="fi"><div class="fq" onclick="this.parentElement.classList.toggle('on')">How are your signals different from free ones online?<span class="fp">+</span></div><div class="fa"><div class="fai">Our signals come from former institutional traders who managed 500M+ portfolios at Goldman Sachs, JPMorgan, Barclays, and Deutsche Bank. We use institutional-grade analysis, not retail indicators. The accuracy comes from 15-22 years of professional experience.</div></div></div>
-<div class="fi"><div class="fq" onclick="this.parentElement.classList.toggle('on')">Which markets do you cover?<span class="fp">+</span></div><div class="fa"><div class="fai">We cover crypto (BTC, ETH, and major altcoins), US and European futures, forex majors, and stock indices. 500+ signals daily across all these markets.</div></div></div>
-<div class="fi"><div class="fq" onclick="this.parentElement.classList.toggle('on')">Do you provide financial advice?<span class="fp">+</span></div><div class="fa"><div class="fai">No. Wall Street Elite is an educational community and signal-sharing platform. We do not provide regulated financial advice. All trading involves risk, and you should only trade with capital you can afford to lose.</div></div></div>
-<div class="fi"><div class="fq" onclick="this.parentElement.classList.toggle('on')">How do I join?<span class="fp">+</span></div><div class="fa"><div class="fai">Click any "Join Free" button on this page. You'll be taken directly to our private WhatsApp community. No registration, no email, no credit card — just click and you're in.</div></div></div>
+
+<section class="section">
+<div class="container">
+<div class="text-center">
+<div class="section-badge">What&apos;s Included</div>
+<h2 class="section-title">Everything You Need to Trade Professionally</h2>
+<p class="section-sub">Institutional-grade tools and insights &mdash; delivered to your WhatsApp</p>
+</div>
+
+<div class="services-grid" style="margin-top:48px">
+<div class="service-card">
+<div class="service-icon">&#128200;</div>
+<h3>500+ Daily Signals</h3>
+<p>Entry, exit, stop-loss and take-profit for crypto, futures, forex, and indices. Updated throughout the trading session.</p>
+</div>
+<div class="service-card">
+<div class="service-icon">&#127891;</div>
+<h3>Weekly Live Masterclasses</h3>
+<p>Live trading sessions with former Wall Street analysts. Market deep-dives, trade reviews, and Q&amp;A. All recordings archived.</p>
+</div>
+<div class="service-card">
+<div class="service-icon">&#128201;</div>
+<h3>Real-Time Analysis</h3>
+<p>Live market updates, macro insights, and price action analysis throughout the entire trading session.</p>
+</div>
+<div class="service-card">
+<div class="service-icon">&#128737;</div>
+<h3>Risk Management</h3>
+<p>Institutional-grade risk framework: position sizing, drawdown protection, and portfolio allocation strategies.</p>
+</div>
+<div class="service-card">
+<div class="service-icon">&#128172;</div>
+<h3>Direct Expert Access</h3>
+<p>Message our analysts directly on WhatsApp. No email queues, no waiting. Get answers in minutes.</p>
+</div>
+<div class="service-card">
+<div class="service-icon">&#128142;</div>
+<h3>Weekly Trade Reviews</h3>
+<p>Personalized portfolio performance analysis, trade reviews, and strategy adjustments every week.</p>
+</div>
 </div>
 </div>
 </section>
-<footer><div class="ft"><p>Risk Warning: Trading stocks, futures, contracts, CFDs, and other financial instruments involves substantial risk of loss. 67% of retail investor accounts lose money when trading CFDs. Past performance is not indicative of future results. This is not financial advice. Only invest what you can afford to lose. Wall Street Elite is a community platform and does not provide regulated financial advice. Marcus Weber, Catherine Hughes, James Harrington, and Emma Lindqvist are independent analysts who previously worked at the institutions mentioned. Wall Street Elite is not affiliated with, endorsed by, or connected to Goldman Sachs, JPMorgan, Barclays, Deutsche Bank, or any other financial institution.</p></div></footer>
-<div class="mo" id="modal" onclick="if(event.target===this)closeModal()">
-<div class="m">
-<button class="mcl" onclick="closeModal()">X</button>
-<div class="mh">
-<img class="mav" id="mav" src="img/founder1.jpg" alt="">
-<div><div class="mnm" id="mnm">Marcus Weber</div><div class="mrl" id="mrl">Founder & Lead Market Strategist</div><div class="mcrds" id="mcrds"></div></div>
+
+<section class="section">
+<div class="container">
+<div class="cta-section">
+<div class="cta-box">
+<div class="section-badge" style="background:var(--primary-dim);border-color:var(--primary-border);color:var(--primary);display:inline-flex;align-items:center;gap:6px;padding:6px 16px;border-radius:50px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:16px">&#9654; Free Access</div>
+<h2 class="cta-title text-gradient">Join Wall Street Elite Today</h2>
+<p class="cta-sub">15,000+ traders already inside. Start receiving institutional-grade signals &mdash; for free.</p>
+<a href="https://chat.whatsapp.com/Eax4szSfbWxJ59BABFR4UO?mode=gi_t" class="cta-btn" target="_blank" rel="noopener">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 6.975L.789 21.789l4.19-1.623A11.96 11.96 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+Join Free on WhatsApp
+</a>
+<p class="cta-note">No credit card required &middot; Instant access &middot; Cancel anytime</p>
 </div>
-<div class="mb">
-<div class="msc"><h4>About</h4><p id="mabout"></p></div>
-<div class="msc"><h4>Career Timeline</h4><div class="mtl" id="mtl"></div></div>
-<div class="msts" id="msts"></div>
+</div>
+</div>
+</section>
+
+<section class="section section-alt">
+<div class="container">
+<div class="text-center">
+<div class="section-badge">Member Reviews</div>
+<h2 class="section-title">What Our Members Say</h2>
+<p class="section-sub">Verified reviews from traders across Europe</p>
+</div>
+
+<div class="testi-grid" style="margin-top:48px">
+<div class="testi-card">
+<div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+<p class="testi-text">&quot;Marcus Weber&apos;s Goldman Sachs background is immediately apparent in every analysis. The precision of his entries is unlike anything I&apos;ve seen in 8 years of trading. My portfolio is up 34% since joining.&quot;</p>
+<div class="testi-author">
+<div class="testi-avatar">TK</div>
+<div>
+<div class="testi-name">Thomas K.</div>
+<div class="testi-loc">Frankfurt, Germany &middot; Software Engineer</div>
 </div>
 </div>
 </div>
+<div class="testi-card">
+<div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+<p class="testi-text">&quot;Catherine&apos;s technical analysis is genuinely world-class. The risk management education alone saved me from several major drawdowns. Best investment I&apos;ve made this year. Her Fibonacci work is exceptional.&quot;</p>
+<div class="testi-author">
+<div class="testi-avatar">SR</div>
+<div>
+<div class="testi-name">Sofia R.</div>
+<div class="testi-loc">Milan, Italy &middot; Marketing Director</div>
+</div>
+</div>
+</div>
+<div class="testi-card">
+<div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+<p class="testi-text">&quot;The European focus is perfect for my timezone. James&apos;s commodities insights are incredibly accurate. I&apos;ve tried many signal services &mdash; nothing compares to this level of institutional expertise.&quot;</p>
+<div class="testi-author">
+<div class="testi-avatar">EL</div>
+<div>
+<div class="testi-name">Erik L.</div>
+<div class="testi-loc">Stockholm, Sweden &middot; Architect</div>
+</div>
+</div>
+</div>
+<div class="testi-card">
+<div class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+<p class="testi-text">&quot;After 3 months, I&apos;ve stopped gambling and started trading professionally. Emma&apos;s risk management principles are gold. My worst month was -4%, down from -28% before joining.&quot;</p>
+<div class="testi-author">
+<div class="testi-avatar">DM</div>
+<div>
+<div class="testi-name">David M.</div>
+<div class="testi-loc">London, UK &middot; Financial Analyst</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="text-center">
+<div class="section-badge">FAQ</div>
+<h2 class="section-title">Questions &amp; Answers</h2>
+</div>
+
+<div class="faq" style="margin-top:48px">
+<div class="faq-item">
+<button class="faq-q" onclick="this.closest('.faq-item').classList.toggle('open')">
+Is this really free? What&apos;s the catch?
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-a"><div class="faq-a-inner">Yes, completely free to join. We offer optional premium memberships for traders who want 1-on-1 mentorship and exclusive deep-dive sessions, but all core signals and community features are free. No credit card, no commitment.</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" onclick="this.closest('.faq-item').classList.toggle('open')">
+How are your signals different from free ones online?
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-a"><div class="faq-a-inner">Our signals come from former institutional traders who managed portfolios at Goldman Sachs, JPMorgan, Barclays, and Deutsche Bank. We use the same analytical frameworks used at the world&apos;s top banks &mdash; not retail indicators. 15-22 years of professional experience inform every signal.</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" onclick="this.closest('.faq-item').classList.toggle('open')">
+Which markets do you cover?
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-a"><div class="faq-a-inner">We cover crypto (BTC, ETH, and major altcoins), US and European futures, forex majors and crosses, and major stock indices. 500+ signals daily across all these markets, with a focus on high-probability setups.</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" onclick="this.closest('.faq-item').classList.toggle('open')">
+Do you provide financial advice?
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-a"><div class="faq-a-inner">No. Wall Street Elite is an educational community and signal-sharing platform. We do not provide regulated financial advice. All trading involves risk, and you should only trade with capital you can afford to lose. Our signals are for educational purposes.</div></div>
+</div>
+<div class="faq-item">
+<button class="faq-q" onclick="this.closest('.faq-item').classList.toggle('open')">
+How do I join?
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-a"><div class="faq-a-inner">Click any &quot;Join Free&quot; button. You&apos;ll be taken directly to our private WhatsApp community. No registration, no email, no credit card &mdash; just click and you&apos;re in. Takes about 10 seconds.</div></div>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footer-disclaimer">
+<strong>Risk Warning:</strong> Trading stocks, futures, contracts, CFDs, and other financial instruments involves substantial risk of loss. Approximately 67% of retail investor accounts lose money when trading CFDs. Past performance is not indicative of future results. This is not financial advice. Only invest what you can afford to lose. Wall Street Elite is a community platform and does not provide regulated financial advice. Marcus Weber, Catherine Hughes, James Harrington, and Emma Lindqvist are independent analysts who previously worked at the institutions mentioned. Wall Street Elite is not affiliated with, endorsed by, or connected to Goldman Sachs, JPMorgan, Barclays, Deutsche Bank, LSE, Cambridge, Oxford, or any other financial institution or university.
+</div>
+</div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal" onclick="if(event.target===this)closeModal()">
+<div class="modal">
+<button class="modal-close" onclick="closeModal()">&times;</button>
+<div class="modal-header">
+<img class="modal-avatar" id="mAvatar" src="img/marcus.jpg" alt="">
+<div>
+<div class="modal-name" id="mName">Marcus Weber</div>
+<div class="modal-role" id="mRole">Founder &amp; Lead Market Strategist</div>
+<div class="modal-creds" id="mCreds"></div>
+</div>
+</div>
+<div class="modal-body">
+<div class="modal-section">
+<h4>About</h4>
+<p id="mAbout"></p>
+</div>
+<div class="modal-section">
+<h4>Career Timeline</h4>
+<div class="modal-timeline" id="mTimeline"></div>
+</div>
+<div class="modal-stats" id="mStats"></div>
+</div>
+</div>
+</div>
+
 <script>
-const D={marcus:{name:"Marcus Weber",role:"Founder & Lead Market Strategist",avatar:"img/founder1.jpg",creds:["Goldman Sachs — VP, Equity Derivatives","LSE — MSc, Financial Economics","22 Years Institutional Experience","00M+ AUM Managed","3x Trading Competition Winner"],about:"Marcus Weber spent 12 years at Goldman Sachs, rising to Vice President of Equity Derivatives. During his tenure, he managed a 00M+ portfolio and consistently outperformed the S&P 500 by 18% annually. After leaving Goldman Sachs, he founded Wall Street Elite with one mission: democratizing institutional-grade trading analysis for everyday retail traders.",timeline:[{t:"Wall Street Elite — Founder",s:"2018-Present",d:"Built community to 15,000+ members across Europe"},{t:"Goldman Sachs — VP, Equity Derivatives",s:"2012-2018",d:"Managed 00M+ AUM, derivatives trading"},{t:"Goldman Sachs — Associate",s:"2008-2012",d:"Equity derivatives trading, risk management"},{t:"LSE — MSc, Financial Economics",s:"2002-2004",d:"Deans List, specialized in derivatives"}],stats:[{n:"92%",l:"Accuracy"},{n:"00M+",l:"AUM"},{n:"3x",l:"Winner"},{n:"15K+",l:"Members"}]},catherine:{name:"Catherine Hughes",role:"Senior Technical Analyst",avatar:"img/founder2.jpg",creds:["JPMorgan — Senior Technical Analyst","Cambridge — BSc, Applied Mathematics","CFA III Charterholder","15 Years Chart Analysis"],about:"Catherine Hughes is a CFA Level III charterholder with 15 years of technical analysis experience at JPMorgan. She specialized in price action analysis and Fibonacci-based trading systems. Her weekly market reports have over 50,000 subscribers and have been featured in Bloomberg and Financial Times.",timeline:[{t:"JPMorgan — Senior Technical Analyst",s:"2015-Present",d:"Leading technical research for EMEA markets"},{t:"JPMorgan — Technical Analyst",s:"2010-2015",d:"Chart analysis, price action systems"},{t:"Cambridge — BSc, Applied Mathematics",s:"2004-2008",d:"First Class Honours, statistics"}],stats:[{n:"88%",l:"Accuracy"},{n:"50K+",l:"Subscribers"},{n:"15",l:"Years"},{n:"CFA III",l:"Charter"}]},james:{name:"James Harrington",role:"Senior Futures & Commodities Strategist",avatar:"img/founder3.jpg",creds:["Barclays Capital — Director, Futures","Oxford — MSc, Mathematical Finance","Reuters Analyst Award 2022","18 Years Futures Experience"],about:"James Harrington is a Reuters Award-winning analyst with 18 years of experience in futures and commodities markets. As Director at Barclays Capital Futures desk, he specialized in macro-driven trading strategies. His research has been cited by major financial publications worldwide.",timeline:[{t:"Barclays Capital — Director, Futures",s:"2016-Present",d:"Led futures desk, macro trading strategies"},{t:"Barclays Capital — Senior Analyst",s:"2011-2016",d:"Commodities research, trading strategies"},{t:"Oxford — MSc, Mathematical Finance",s:"2006-2008",d:"Top of class, derivatives"}],stats:[{n:"90%",l:"Accuracy"},{n:"18",l:"Years"},{n:"200+",l:"Daily Calls"},{n:"Award",l:"Reuters 2022"}]},emma:{name:"Emma Lindqvist",role:"Risk Management Director",avatar:"img/founder4.jpg",creds:["Deutsche Bank — VP, Risk Management","Stockholm School of Economics","FRM Charterholder","15 Years Risk Experience"],about:"Emma Lindqvist is an FRM charterholder with 15 years of risk management experience at Deutsche Bank. She specialized in portfolio risk modeling and derivatives risk. Her risk management framework has been adopted by hedge funds and prop trading firms across Europe.",timeline:[{t:"Deutsche Bank — VP, Risk Management",s:"2015-Present",d:"Portfolio risk, derivatives risk"},{t:"Deutsche Bank — Risk Analyst",s:"2010-2015",d:"Risk modeling and analysis"},{t:"Stockholm School of Economics",s:"2006-2010",d:"Finance and risk management"}],stats:[{n:"15",l:"Years"},{n:"00M+",l:"Risk Managed"},{n:"3,000+",l:"Mentored"},{n:"FRM",l:"Charter"}}};
-function openModal(id){const p=D[id];document.getElementById('mav').src=p.avatar;document.getElementById('mnm').textContent=p.name;document.getElementById('mrl').textContent=p.role;document.getElementById('mabout').textContent=p.about;let c='';for(let i=0;i<p.creds.length;i++)c+='<div class="mcrd">'+p.creds[i]+'</div>';document.getElementById('mcrds').innerHTML=c;let t='';for(let i=0;i<p.timeline.length;i++)t+='<div class="ti"><div class="tt">'+p.timeline[i].t+'</div><div class="ts">'+p.timeline[i].s+'</div><div class="td">'+p.timeline[i].d+'</div></div>';document.getElementById('mtl').innerHTML=t;let s='';for(let i=0;i<p.stats.length;i++)s+='<div class="mss"><span class="mssn">'+p.stats[i].n+'</span><span class="mssl">'+p.stats[i].l+'</span></div>';document.getElementById('msts').innerHTML=s;document.getElementById('modal').classList.add('on');document.body.style.overflow='hidden'}
-function closeModal(){document.getElementById('modal').classList.remove('on');document.body.style.overflow=''}
+var D={
+marcus:{
+name:"Marcus Weber",role:"Founder & Lead Market Strategist",avatar:"img/marcus.jpg",
+creds:["Goldman Sachs — VP, Equity Derivatives","LSE — MSc, Financial Economics","22 Years Institutional Experience","$500M+ AUM Managed","3x Trading Competition Winner"],
+about:"Marcus Weber spent 12 years at Goldman Sachs, rising to Vice President of Equity Derivatives. During his tenure, he managed a $500M+ portfolio and consistently outperformed the S&P 500 by an average of 18% annually. He developed proprietary derivatives strategies that were adopted by the trading desk. After leaving Goldman Sachs, he founded Wall Street Elite with one mission: democratizing institutional-grade trading analysis for everyday retail traders. His approach combines quantitative rigor with practical trading experience, having navigated multiple market cycles including the 2008 financial crisis and the 2020 COVID volatility.",
+timeline:[
+{t:"Wall Street Elite — Founder",s:"2018–Present",d:"Built community to 15,000+ members across 28 countries"},
+{t:"Goldman Sachs — VP, Equity Derivatives",s:"2012–2018",d:"Managed $500M+ AUM, led derivatives trading desk"},
+{t:"Goldman Sachs — Associate",s:"2008–2012",d:"Equity derivatives trading, risk management strategies"},
+{t:"Goldman Sachs — Analyst",s:"2004–2008",d:"Market analysis, trading desk operations"},
+{t:"LSE — MSc, Financial Economics",s:"2002–2004",d:"Dean’s List, specialized in derivatives pricing"}
+],
+stats:[{n:"92%",l:"Accuracy"},{n:"$500M+",l:"AUM"},{n:"3x",l:"Winner"},{n:"15K+",l:"Members"}]
+},
+catherine:{
+name:"Catherine Hughes",role:"Senior Technical Analyst",avatar:"img/catherine.jpg",
+creds:["JPMorgan — Senior Technical Analyst","Cambridge — BSc, Applied Mathematics","CFA III Charterholder","15 Years Chart Analysis"],
+about:"Catherine Hughes is a CFA Level III charterholder with 15 years of technical analysis experience at JPMorgan's London office. She specialized in price action analysis, Fibonacci-based trading systems, and institutional order flow analysis. Her weekly market reports have accumulated over 50,000 subscribers and have been featured in Bloomberg Terminal and Financial Times. Catherine's approach brings the same technical frameworks used by institutional trading desks to retail traders.",
+timeline:[
+{t:"JPMorgan — Senior Technical Analyst",s:"2015–Present",d:"Leading technical research for EMEA equity and derivatives markets"},
+{t:"JPMorgan — Technical Analyst",s:"2010–2015",d:"Developed price action systems and Fibonacci trading models"},
+{t:"Barclays — Junior Analyst",s:"2008–2010",d:"Equity research and technical analysis"},
+{t:"Cambridge — BSc, Applied Mathematics",s:"2004–2008",d:"First Class Honours, specialized in mathematical statistics"}
+],
+stats:[{n:"88%",l:"Accuracy"},{n:"50K+",l:"Subscribers"},{n:"15yr",l:"Experience"},{n:"CFA III",l:"Charter"}]
+},
+james:{
+name:"James Harrington",role:"Senior Futures & Commodities Strategist",avatar:"img/james.jpg",
+creds:["Barclays Capital — Director, Futures","Oxford — MSc, Mathematical Finance","Reuters Analyst Award 2022","18 Years Futures Experience"],
+about:"James Harrington is a Reuters Award-winning analyst with 18 years of experience in futures and commodities markets. As Director at Barclays Capital's Futures desk, he led macro trading strategy for commodities including oil, gold, and agricultural futures. His research has been cited by Bloomberg, Reuters, and major hedge funds. James specializes in macro-driven trading strategies that connect global economic data to market movements.",
+timeline:[
+{t:"Barclays Capital — Director, Futures",s:"2016–Present",d:"Led futures desk, managed macro commodities book"},
+{t:"Barclays Capital — Senior Analyst",s:"2011–2016",d:"Commodities research, trading strategy development"},
+{t:"Deutsche Bank — Analyst",s:"2008–2011",d:"Commodities market analysis and pricing models"},
+{t:"Oxford — MSc, Mathematical Finance",s:"2006–2008",d:"Top of class, specialized in derivatives pricing"}
+],
+stats:[{n:"90%",l:"Accuracy"},{n:"18yr",l:"Futures"},{n:"200+",l:"Daily Calls"},{n:"Award",l:"Reuters 2022"}]
+},
+emma:{
+name:"Emma Lindqvist",role:"Risk Management Director",avatar:"img/emma.jpg",
+creds:["Deutsche Bank — VP, Risk Management","Stockholm School of Economics","FRM Charterholder","15 Years Risk Experience"],
+about:"Emma Lindqvist is an FRM (Financial Risk Manager) charterholder with 15 years of risk management experience at Deutsche Bank. She specialized in portfolio risk modeling, derivatives risk, and regulatory compliance (Basel III/IV). Her risk management framework has been adopted by several European hedge funds and proprietary trading firms. Emma's role at Wall Street Elite focuses on teaching members how to protect their capital through institutional-grade risk discipline.",
+timeline:[
+{t:"Deutsche Bank — VP, Risk Management",s:"2015–Present",d:"Portfolio risk modeling, derivatives risk, Basel III compliance"},
+{t:"Deutsche Bank — Risk Analyst",s:"2010–2015",d:"Risk analysis and model validation"},
+{t:"Stockholm School of Economics",s:"2006–2010",d:"Finance and risk management degree"}
+],
+stats:[{n:"15yr",l:"Risk Exp."},{n:"$200M+",l:"Risk Managed"},{n:"3,000+",l:"Mentored"},{n:"FRM",l:"Charter"}]
+}
+};
+
+function openModal(id){
+var p=D[id];
+document.getElementById('mAvatar').src=p.avatar;
+document.getElementById('mName').textContent=p.name;
+document.getElementById('mRole').textContent=p.role;
+document.getElementById('mAbout').textContent=p.about;
+var c='';
+for(var i=0;i<p.creds.length;i++){c+='<div class="modal-cred">'+p.creds[i]+'</div>';}
+document.getElementById('mCreds').innerHTML=c;
+var t='';
+for(var i=0;i<p.timeline.length;i++){t+='<div class="tl-item"><div class="tl-title">'+p.timeline[i].t+'</div><div class="tl-sub">'+p.timeline[i].s+'</div><div class="tl-desc">'+p.timeline[i].d+'</div></div>';}
+document.getElementById('mTimeline').innerHTML=t;
+var s='';
+for(var i=0;i<p.stats.length;i++){s+='<div class="ms"><span class="ms-n">'+p.stats[i].n+'</span><span class="ms-l">'+p.stats[i].l+'</span></div>';}
+document.getElementById('mStats').innerHTML=s;
+document.getElementById('modal').classList.add('on');
+document.body.style.overflow='hidden';
+}
+
+function closeModal(){
+document.getElementById('modal').classList.remove('on');
+document.body.style.overflow='';
+}
 </script>
 </body>
 </html>
